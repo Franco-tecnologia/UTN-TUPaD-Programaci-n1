@@ -3,6 +3,7 @@ from statistics import mean, median, mode, StatisticsError
 numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
 media = mean(numeros_aleatorios)
 mediana = median(numeros_aleatorios)
+
 try:
     moda = mode(numeros_aleatorios)
 except StatisticsError:
