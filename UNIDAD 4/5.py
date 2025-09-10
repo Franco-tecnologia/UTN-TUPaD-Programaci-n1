@@ -7,14 +7,13 @@ numero_secreto = random.randint(0, 9)
 intentos = 0 
 
 print("¡Adivina el número secreto entre 0 y 9!")
-
-while True:
+intento = -1  
+while intento != numero_secreto:
     intento = int(input("Ingrese su número: "))
     intentos += 1
     
-    if intento == numero_secreto:
-        print(f" ¡Correcto! El número era {numero_secreto}.")
-        print(f"Lo lograste en {intentos} intentos.")
-        break
-    else:
+    if intento != numero_secreto:
         print("Incorrecto, intenta de nuevo.")
+
+print(f"¡Correcto! El número era {numero_secreto}.")
+print(f"Lo lograste en {intentos} intentos.")

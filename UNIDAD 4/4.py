@@ -2,14 +2,10 @@
 secuencia. El programa debe detenerse y mostrar el total acumulado cuando el usuario ingrese 
 un 0. """
 
-total = 0   
-
-while True:
+total = 0
+numero = int(input("Ingrese un número entero (0 para terminar): "))
+while numero != 0:
+    total += numero
     numero = int(input("Ingrese un número entero (0 para terminar): "))
-    
-    if numero == 0: 
-        break
-    
-    total += numero  
 
 print(f"El total acumulado es: {total}")
