@@ -1,0 +1,5 @@
+manzana,1800.0,50
+banana,1300.0,30
+naranja,1500.0,40
+limon,3000.0,7
+pera,1600.0,25
